@@ -3,8 +3,8 @@ import unittest
 from io import StringIO
 from ArithmeticOperators import arithmeticOperators
 
-class IfElseTest(unittest.TestCase):
-    def test_1_if_and_else_odd(self):
+class ArithmeticOperatorsTest(unittest.TestCase):
+    def test_1_ArithmeticOperators(self):
         out = StringIO()
         sys.stdout = out
         arithmeticOperators(3, 2)
@@ -14,7 +14,7 @@ class IfElseTest(unittest.TestCase):
         self.assertEqual(values[1], '1')
         self.assertEqual(values[2], '6')
 
-    def test_2_if_and_else_odd(self):
+    def test_2_ArithmeticOperators(self):
         out = StringIO()
         sys.stdout = out
         arithmeticOperators(8, 0)
